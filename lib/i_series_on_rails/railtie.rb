@@ -53,5 +53,13 @@ module ActiveRecord
       end
     end
 
+    def self.serialize_time_as_integer meth
+      serialize meth, ISeriesOnRails::StoreTimeAsInteger
+
+      define_method meth.to_s+"=" do |v|
+        @attributes[meth.to_s][:value] = v
+      end
+    end
+
   end
 end
