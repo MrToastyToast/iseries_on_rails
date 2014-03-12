@@ -43,9 +43,9 @@ usage:
 
 Time is stored as a 6 digit number (201221), this will convert it into more human readable format: 20:12:21
 
-class Widget < ActiveRecord::Base
-  serialize_time_as_integer :some_field
-end
+    class Widget < ActiveRecord::Base
+      serialize_time_as_integer :some_field
+    end
 
 ### Program Calls ###
 
