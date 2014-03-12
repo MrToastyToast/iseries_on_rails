@@ -8,6 +8,7 @@ module ISeriesOnRails
   autoload :VERSION
   autoload :StoreDateAsInteger
   autoload :StorePhoneAsInteger
+  autoload :StoreTimeAsInteger
   autoload :AS400
   autoload :IFS
   autoload :ProgramCall
