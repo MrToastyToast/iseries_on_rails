@@ -39,6 +39,14 @@ usage:
       serialize_phone_as_integer :some_field
     end
 
+#### Serializing Time as Integers ####
+
+Time is stored as a 6 digit number (201221), this will convert it into more human readable format: 20:12:21
+
+class Widget < ActiveRecord::Base
+  serialize_time_as_integer :some_field
+end
+
 ### Program Calls ###
 
 You can use ISeriesOnRails to execute RPG programs.  To do so, save a .pcml file in "#{Rails.root}/lib/pcml/"
